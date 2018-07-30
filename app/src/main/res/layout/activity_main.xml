@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <com.taishi.library.Indicator
+        android:id="@+id/id_indicator"
+        app:duration="18000"
+        app:step_num="70"
+        app:bar_num="50"
+        app:bar_color="#ef0c9c"
+        android:background="#f000"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ded2ffd3">
+     <TextView
+         android:textColor="#f000"
+         android:textSize="20sp"
+         android:id="@+id/id_name"
+         android:text="Name Music"
+         android:gravity="center"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content" />
+        <SeekBar
+            android:progress="0"
+            android:max="100"
+            android:background="#ffee00"
+            android:id="@+id/id_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="92dp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:layout_below="@+id/id_seekbar"
+            android:id="@+id/id_txtStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="#f000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/id_txtEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/id_name"
+            android:layout_below="@+id/id_seekbar"
+            android:gravity="center"
+            android:text="00:00"
+            android:textColor="#f000"
+            android:textSize="20sp"
+            android:layout_alignRight="@+id/id_name" />
+
+        <Button
+            android:id="@+id/id_btn"
+            android:textColor="#ffffff"
+            android:background="#0c30d1"
+            android:text="Play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="47dp"
+            android:layout_marginEnd="136dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="136dp" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
